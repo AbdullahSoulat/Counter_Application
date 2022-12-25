@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
-  
+
     <div class="container-inside">
-      <div class="display">
+      <div id="display" class="display">
           <p id="count">000000</p>
       </div>
       <div class="buttons">
-          <button class="back button">
-              <svg id="subtract" class="Back-Button-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.2 34.75">
+          <button id="subtract" class="back button">
+              <svg class="Back-Button-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.2 34.75">
                   <defs>
                     <style>
                       .cls-1 {
@@ -26,8 +26,8 @@
                   <path class="cls-1" d="M14.59,0L6.18,7.29l7.75,7.46v-5.75s11.16,.17,11.16,11.28-11.11,10.71-11.11,10.71c0,0-9.04-.8-10.24-8.22-.2-1.25-1.13-2.67-2.23-2.72-1.24-.05-1.64,.82-1.5,2.14,.18,1.78,2.17,12.56,14.02,12.56s15.15-9.46,15.15-13.33-.85-15.49-14.61-15.49V0Z"/>
                 </svg>
           </button>
-          <button class="reset button">
-              <svg  id="reset" class="Reset-Button-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.55 28.77">
+          <button  id="reset" class="reset button">
+              <svg class="Reset-Button-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.55 28.77">
                   <defs>
                     <style>
                       .cls-1 {
@@ -41,6 +41,42 @@
           </button>
       </div>
       <button id="add" class="forward-button"></button>
+  </div>
+
+  <div class="colors">
+    <!-- BLACK -->
+    <span class="active" style="--clr:#111111" onclick="changeColor('#111111');
+                                                        changeAddButton('#8f8f8f');
+                                                        changeDisplay('#5a5a5a')"></span>
+
+    <!-- BLUE -->
+    <span style="--clr:#1876d0" onclick="changeBackgroundColor('#1876d0');
+                                         changeAddButton('#baddfa');
+                                         changeOtherButtons('#7483b4');
+                                         changeDisplay('#62a5ff')"></span>
+    <!-- GREEN -->
+    <span style="--clr:#398e3d" onclick="changeBackgroundColor('#398e3d');
+                                         changeAddButton('#d4d4d4');
+                                         changeOtherButtons('#868686');
+                                         changeDisplay('#7acc88')"></span>
+
+    <!-- RED -->
+    <span style="--clr:#e63f3f" onclick="changeBackgroundColor('#e63f3f');
+                                         changeAddButton('#fdd7d6');
+                                         changeOtherButtons('#a98181');
+                                         changeDisplay('#fdd7d6')"></span>
+
+    <!-- TEAL -->
+    <span style="--clr:#445b63" onclick="changeBackgroundColor('#445b63');
+                                         changeAddButton('#829aab');
+                                         changeOtherButtons('#58717d');
+                                         changeDisplay('#81a893')"></span>
+
+    <!-- WHITE -->
+    <span style="--clr:#8e8d92" onclick="changeBackgroundColor('#8e8d92');
+                                         changeAddButton('#8e8d92');
+                                         changeOtherButtons('#a5a4a9');
+                                         changeDisplay('#e5e4e9')"></span>
   </div>
       
 </body>
