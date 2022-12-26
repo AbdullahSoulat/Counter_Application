@@ -236,7 +236,65 @@ p {
 
 /* adding media queries so that the app works on mobile */
 @media all and (max-width: 500px) {
-    body {
-        background-color: #111111;
+    .display {
+        width: 183.75px;
+        height: 75px;
+        position: relative;
+    }
+
+    .buttons {
+        width: 300px;
+        height: 116.25px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .button {
+        width: 55px;
+        position: absolute;
+    }
+
+    .back {
+        left: 43px;
+    }
+    
+    .reset {
+        right: 40px;
+    }
+
+    .Back-Button-svg {
+        width: 20px;
+    }
+    
+    .Reset-Button-svg {
+        width: 25px;
+    }
+
+    p {
+        font-size: 3rem;
+        top: 0px;
+    }
+
+    .forward-button {
+        width: 135px;
+        margin-top: -15px;
+    }
+
+    .svg-container {
+        width: 325px;
+        z-index: -5;
+    }
+
+    .counter-fill {
+        position: absolute;
+        right: 3px;
+        top: 17px;
+        width: 310px;
+        z-index: -4;
+    }
+
+    .counter-border {
+       
     }
 }
