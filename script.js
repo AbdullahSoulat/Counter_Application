@@ -5,12 +5,14 @@ const countAddBtn = document.getElementById("add");
 const countSubtractBtn = document.getElementById("subtract");
 const countResetBtn = document.getElementById("reset");
 
-const display = document.getElementById("display");
+const counterFill = document.getElementById("fill");
+const counterBorder = document.getElementById("border");
 
 const audio = new Audio('audio/click_sound.mp3');
 
 countValue.innerText = count;
 
+// added to the valur of count/ incrementing the counter
 countAddBtn.addEventListener("click", () => {
     count++;
     countValue.innerText = count;
@@ -20,20 +22,21 @@ countAddBtn.addEventListener("click", () => {
     }
 })
 
+
+// subtracting from the value of count/ decrementing the counter
 countSubtractBtn.addEventListener("click", () => {
     if (count > 0) {
         count--;
         countValue.innerText = count;
         audio.play();
-        console.log("Hello from the subtract button")
     }
 })
 
+// resetting the counter
 countResetBtn.addEventListener("click", () => {
     count = 0;
     countValue.innerText = count;
     audio.play();
-    console.log("Hello from the reset button")
 })
 
 // changing the color of the background
@@ -53,11 +56,22 @@ function changeBackgroundColor(backgroundColor) {
     countAddBtn.style.backgroundColor = addBtnColor;
  }
 
+ // changing the color of the back and the reset button
  function changeOtherButtons(otherBtnColor) {
     countSubtractBtn.style.backgroundColor = otherBtnColor;
     countResetBtn.style.backgroundColor = otherBtnColor;
  }
 
+ // changing the color of the displaly
  function changeDisplay(displayColor) {
     display.style.backgroundColor = displayColor;
  }
+
+ // changing the color of counter fill
+function changeFill(fillColor) {
+    counterFill.style.fill = fillColor;
+}
+
+function changeBorder(borderColor) {
+    counterBorder.style.fill = borderColor;
+}
